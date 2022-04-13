@@ -17,6 +17,6 @@ public class GetListProductServlet extends HttpServlet {
         ProductModel model = new ProductModel();
         List<Product> listObj = model.findAll();
         req.setAttribute("listObj",listObj);
-        req.getRequestDispatcher("/products/list.jsp").forward(req,resp);
+        req.getRequestDispatcher("/list.jsp").forward(req,resp);
     }
 }
