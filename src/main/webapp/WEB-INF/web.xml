@@ -5,10 +5,17 @@
          version="4.0">
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.example.dethi.controller.account.LoginServlet</servlet-class>
+        <servlet-class>com.example.dethi.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/accounts/login</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
-</web-app>
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>com.example.dethi.controller.GetListProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping></web-app>
